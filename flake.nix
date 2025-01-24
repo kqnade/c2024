@@ -15,6 +15,7 @@
             cmake
             gnumake
             git
+            ncurses
           ];
           pure = true;
         };
