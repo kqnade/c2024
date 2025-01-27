@@ -55,10 +55,10 @@ int rulare(int joc) {
         noecho();
         // 辞書の定義
         char dict[29][6] = {
-            "arici", "atent", "baiat", "ceata", "debut", "peste", "fixat",
-            "hamac", "harta", "jalon", "jucam", "lacat", "magie", "nufar",
-            "oaste", "perus", "rigle", "roman", "sanie", "scris", "sonda",
-            "texte", "tipar", "titan", "zebra", "vapor", "vatra"};
+            "apple", "beach", "chair", "dance", "eagle", "flame", "grass",
+            "honey", "inked", "joint", "kingy", "lemon", "magic", "nesty",
+            "opale", "pathy", "quiet", "rosey", "snowy", "tanky", "unity",
+            "water", "youth", "titan", "zebra", "vapor", "crave", "block"};
         int ver[29][6] = {0};
         char guess[5];
 
@@ -74,7 +74,6 @@ int rulare(int joc) {
                 temp = getch();
                 // 単語の削除
                 if (temp == 127) {
-                    cuvant[j] == '\0';
                     if (j > 0) {
                         j--;
                     }
@@ -178,7 +177,6 @@ int rulare(int joc) {
                                 // 単語内で文字を検索
                                 if ((cuvant[k] == dict[guess_nr][l]) &&
                                     (ok == 1) && (ver[guess_nr][l] == 0)) {
-                                    ok == 0;
                                     ver[guess_nr][l] = 1;
                                     int m = 0;
                                     // 重複する文字があるか確認
@@ -211,7 +209,6 @@ int rulare(int joc) {
                     i++;
                     move(pozx[i][j], pozy[i][j]);
                 } else if (temp == 127) {
-                    cuvant[j] == '\0';
                     if (j > 0) {
                         j--;
                     }
@@ -241,6 +238,8 @@ int rulare(int joc) {
             joc = 0;
         }
     }
+
+    return 0;
 }
 
 int main() {
