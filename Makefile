@@ -29,13 +29,3 @@ $(EXEC): $(OBJS)
 clean:
 	rm -f $(OBJS) $(EXEC)
 
-# インストールターゲット（任意で作成）
-install:
-	@echo "Installing $(EXEC)..."
-	@# 実行ファイルを適切な場所にコピーする処理を記述することができます。
-
-# テストターゲット（任意で作成）
-test:
-	@echo "Running tests..."
-	@# 必要に応じてテストスクリプトを呼び出すことができます。
-
