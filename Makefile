@@ -23,7 +23,7 @@ $(EXEC): $(OBJS)
 
 # オブジェクトファイルの作成
 %.o: $(SRCDIR)/%.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@ -O3
 
 # クリーンターゲット（ビルドファイルを削除）
 clean:
